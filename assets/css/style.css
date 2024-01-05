@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Barlow+Condensed:wght@400;500;600;700&display=swap");
+
+:root {
+  --color-body: #006400;
+  --color-heading: #dfefca;
+  --color-base: #c2efb3;
+  --font-base: "Barlow Condensed";
+}
