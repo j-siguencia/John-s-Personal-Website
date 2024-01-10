@@ -182,6 +182,8 @@ a:hover {
 
 table {
   margin-left: -50px;
+  margin-top: -60px;
+  scale: 0.9;
 }
 
 /* End of home section */
@@ -210,3 +212,4 @@ p2 {
 .card-custom:hover .card-custom-img img {
   transform: scale(1.2);
 }
+/* End of Projects Section */

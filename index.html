@@ -69,10 +69,10 @@
                 University. I am looking <br />to break out into the field of
                 Software Engineering and explore my interests!
               </p>
-              <div class="pfp" data-aos="fade-left" data-aos-delay="300">
+              <div class="pfp d-none d-lg-block" data-aos="fade-left" data-aos-delay="300">
                 <img
                   src="assets\images\selfire.jpg"
-                  class="selfie d-lg-block rounded-circle"
+                  class="selfie d-lg-block rounded-circle "
                   alt="John"
                 />
                 <img
@@ -241,5 +241,20 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navLinks = document.querySelectorAll(".navbar-nav a");
+    
+        navLinks.forEach(function (navLink) {
+          navLink.addEventListener("click", function () {
+            var navbarCollapse = document.getElementById("navbarNav");
+            if (navbarCollapse.classList.contains("show")) {
+              // Close the collapsed navbar
+              navbarCollapse.classList.remove("show");
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
