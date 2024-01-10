@@ -9,14 +9,22 @@
     <link rel="stylesheet" href="./assets/css/line-awesome.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!--Nav bar-->
-    <nav class="navbar navbar-expand-lg fixed top">
+    <nav class="navbar navbar-expand-lg fixed top sticky-top">
       <div class="container">
-        <!--<a class="navbar-brand" href="#">
-          <span class="h1">John Siguencia </span>
-        </a>
-    -->
+        <div class="navbar-brand" >
+          <a href="https://github.com/j-siguencia" target="_blank">
+          <i class="lab la-github icon1"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/john-siguencia-/" target="_blank">
+          <i class="lab la-linkedin icon1"></i>
+          </a>
+          <a href="assets\resume\resume.pdf" download="john-siguencia-resume.pdf">
+          <i class="las la-file-download icon1"></i>
+          </a>
+        </div>
+    
         <button
           class="navbar-toggler"
           type="button"
@@ -37,9 +45,6 @@
               <a class="nav-link" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#experiences">Experiences</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
@@ -52,19 +57,19 @@
     <!-- End of Nav bar-->
 
     <!-- Content Holder-->
-    <div id="content-holder">
+    <div id="content-holder" class ="container py-1">
       <!--Home-->
       <section id="home" class="full-height">
         <div class="container">
           <div class="home-text">
             <div class="col-lg-8">
-              <h1>Hello, Welcome!</h1>
-              <p>
+              <h1 data-aos="fade-right">Hello, Welcome!</h1>
+              <p data-aos="fade-right" data-aos-delay="300">
                 Hi, I am John Siguencia. I'm a current senior attending Wesleyan
                 University. I am looking <br />to break out into the field of
                 Software Engineering and explore my interests!
               </p>
-              <div class="pfp">
+              <div class="pfp" data-aos="fade-left" data-aos-delay="300">
                 <img
                   src="assets\images\selfire.jpg"
                   class="selfie d-lg-block rounded-circle"
@@ -76,20 +81,53 @@
                 />
                 <img src="assets\images\apple.webp" class="elements pic2" />
               </div>
+              <table class="table table-striped table-light" data-aos="fade-right" data-aos-delay="600">
+                <caption>
+                  Skills section
+                </caption>
+                <thread>
+                
+                    <th scope="col" colspan="4">Relevant Skills</th>
+                  </tr>
+                </thread>
+                <tbody>
+                  <tr>
+                    <th scope="row">Languages</th>
+                    <td colspan="3">
+                      <strong>Python</strong>, JavaScript, OCaml, SML
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Front End</th>
+                    <td colspan="3">
+                      HTML, CSS, Bootstrap, React, React Native
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Back End</th>
+                    <td colspan="3">PHP, Node.js</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Other</th>
+                    <td colspan="3">SQL, Git, Postman</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </section>
       <!--End of Home-->
+      <!-- About Me-->
       <section id="about" class="full-height">
         <div class="container">
           <div class="row pb-4">
             <div class="col-lg-8">
-              <h2>About me</h2>
+              <h2 data-aos="fade-up" data-aos-delay="100">About me:</h2>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-4">
+          <div class="row gy-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
               <div class="location p-4 container-base rounded-5 shadow-effect">
                 <div class="icon rounded-4">
                   <i class="las la-home"></i>
@@ -97,11 +135,11 @@
                 <h3>Location:</h3>
                 <p1>
                   I am currently studying at Wesleyan University<br />
-                  in Middletown, CT. I was born and raised in Newark, NJ.
+                  in Middletown, CT. I am graduating May 2024. I was born and raised in Newark, NJ.
                 </p1>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
               <div class="location p-4 container-base rounded-5 shadow-effect">
                 <div class="icon rounded-4">
                   <i class="las la-frog"></i>
@@ -109,27 +147,91 @@
                 <h3>Interests:</h3>
                 <p1>
                   I'm really into cooking, video games and most recenetly,
-                  bouldering. I enjoy making desserts like lemon scones. I've
-                  recently started bouldering and am having tons of fun
-                  climbing!
+                  bouldering. I really enjoy cooking for other people! 
                 </p1>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
               <div class="location p-4 container-base rounded-5 shadow-effect">
                 <div class="icon rounded-4">
                   <i class="las la-tasks"></i>
                 </div>
                 <h3>Goals:</h3>
                 <p1>
-                  I don't have much experience right now and honestly don't know
-                  what direction I want to head in. And so my main goal is to
-                  just gain experience and to learn a lot more about being a SWE
-                  and get my hands dirty
+                  My main goal is to just gain experience and to learn a lot
+                  more about being a SWE.
                 </p1>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <!--End of About me-->
+
+      <!--Project-->
+      <section id="projects" class="full-height2">
+        <div class="container">
+          <div class="row pb-4">
+            <div class="col-lg-8">
+              <h2 data-aos="fade-up" data-aos-delay="100">Projects:</h2>
+            </div>
+          </div>
+          <div class="row gy-4">
+            <div class="col-lg-6">
+              <div class="card-custom rounded-4 container-base p-4 shadow-effect" style="width: 30rem; height: 23rem;" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-custom-img rounded-4">
+                  <img src="assets\images\Screenshot 2024-01-09 175619.png" alt="Personal Website" class="pswb rounded-4">
+                  <div class="card-custom-content p-4">
+                    <h3>My personal website:</h3> 
+                    <p2>I created this website using using HTML, CSS, Bootstrap<br> and other libraries. This website will be used to archive my projects and work experiences</p2>
+                    <a href ="" class = "link-custom">Visit this website here!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card-custom rounded-4 container-base p-4 shadow-effect" style="width: 30rem; height: 29rem;" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-custom-img rounded-4">
+                  <img src="assets\images\pexels-photo-374777.webp" alt="Personal Website" class="pswb3 rounded-4">
+                  <div class="card-custom-content p-4">
+                    <h3>Musical Ranks:</h3> 
+                    <p2>Musical Ranks is a basic web app where users can rate their favorite song. Basic features include 
+                      account login and signup, song rating and sharing, 
+                      notifications, and simple front-end authentication. </p2>
+                    <a href ="" class= "link-custom" >Visit the website here!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="card-custom rounded-4 container-base p-4 shadow-effect" style="width: 30rem; height: 32rem;" data-aos="fade-up" data-aos-delay="500">
+                <div class="card-custom-img rounded-4">
+                  <img src="assets\images\water-fountain.jpg" alt="Personal Website" class="pswb3 rounded-4">
+                  <div class="card-custom-content p-4">
+                    <h3>Water Dispenser:</h3> 
+                    <p2>Currently an ongoing project, we aim to create a web app where Wesleyan students and faculty can add, rate, 
+                      and review water dispensers around campus. Planned features include the ability to search for water dispensers by distance, 
+                      rating, and accessibilty, visual aid to help users find their desired water dispenser, and more!</p2>
+                    <a href ="https://github.com/LaughingPenguin/waterdispenser_v2" target="_blank" class = "link-custom">Visit this website here!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+
+
+          </div>
+
+          
+
+        </div>
+      </section>
+
+      <section id="contact" class="short-height">
+        <div class="container">
+          <p style="text-align: center;">If you need to contact me please reach out via email at: <a style="color: #16123f"href="mailto:johnsig2020@gmail.com">johnsig2020@gmail.com</a>. You can also see any of my relevant links on the top left hand side of your screen</p>
         </div>
       </section>
     </div>
