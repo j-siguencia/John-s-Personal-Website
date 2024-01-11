@@ -78,7 +78,7 @@ a:hover {
 }
 
 .full-height2 {
-  min-height: 170vh;
+  min-height: 200vh;
   height: 120%;
   display: flex;
   flex-direction: column;
@@ -161,7 +161,7 @@ a:hover {
   width: 10%;
   height: 10%;
   margin-top: -500px;
-  margin-left: 1120px;
+  margin-left: 1100px;
 }
 
 .elements {
@@ -213,3 +213,27 @@ p2 {
   transform: scale(1.2);
 }
 /* End of Projects Section */
+
+@media only screen and (max-width: 900px) {
+  table {
+    margin-top: 30px;
+    margin-left: 7px;
+  }
+  .home-text {
+    margin-left: -30px;
+  }
+  .full-height {
+    min-height: 140vh;
+    height: 130%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #fff;
+  }
+  .full-height2 {
+    min-height: 240vh;
+    height: 130%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #fff;
+  }
+}
