@@ -68,6 +68,43 @@ a:hover {
   background-color: var(--color-base);
 }
 
+#tooltip {
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+}
+
+#tooltipText {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  white-space: nowrap;
+  padding: 3px 8px;
+  border-radius: 7px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#tooltipText::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 15px solid;
+  border-color: #0000 #0000 #0000 #0000;
+}
+
+#tooltip:hover #tooltipText {
+  top: 90%;
+  left: 21%;
+  visibility: visible;
+  opacity: 1;
+}
 /* Section base Styles*/
 .full-height {
   min-height: 100vh;
